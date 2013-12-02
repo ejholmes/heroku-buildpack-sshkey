@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ssh-agent
+
 BUILD_DIR=$1
 CACHE_DIR=$2
 

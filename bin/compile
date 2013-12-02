@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-ssh-agent
-
 BUILD_DIR=$1
 CACHE_DIR=$2
 
@@ -13,4 +11,5 @@ mkdir -p $BUILD_DIR/.ssh
 
 echo $SSH_KEY > $FILE
 
+eval $(ssh-agent)
 ssh-add $FILE

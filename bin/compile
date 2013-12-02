@@ -3,6 +3,8 @@
 BUILD_DIR=$1
 CACHE_DIR=$2
 
+echo $BUILD_DIR
+
 FILE=$BUILD_DIR/.ssh/id_rsa
 
 mkdir -p $BUILD_DIR/.ssh

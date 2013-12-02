@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+if [ ! -z "$SSH_KEY" ]; then
+  echo "SSH key buildpack"
+else
+  echo "No private SSH key found"
+  exit 1
+fi

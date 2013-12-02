@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+BUILD_DIR=$1
+CACHE_DIR=$2
+
+FILE=$BUILD_DIR/.ssh/id_rsa
+
+mkdir -p $BUILD_DIR/.ssh
+
+echo $SSH_KEY > $FILE
+
+ssh-add $FILE

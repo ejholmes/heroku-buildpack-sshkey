@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo "Foobar"
+
 if [ ! -z "$SSH_KEY" ]; then
   echo "SSH key buildpack"
 else
